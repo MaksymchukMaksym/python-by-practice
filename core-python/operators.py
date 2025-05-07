@@ -76,3 +76,17 @@ print(True and False)
 print(True and 5)
 print(0 or 3)
 print("" or "text")
+
+def max_of_two(a,b):
+    print(((a>b) and a) or b)
+
+max_of_two(1,2)
+
+res1 = not True or False
+res2 = True or False and False
+res3 = (True or False) and False
+# 1 - not, 2- and, 3 - or
+print()
+print(res1)
+print(res2)
+print(res3)
