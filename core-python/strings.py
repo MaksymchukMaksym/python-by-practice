@@ -36,11 +36,13 @@ def task_3():
 def task_4():
     s = "Max is good man"
     s.replace(' ', "_")
+    print(s)
 
 
 # remove_duplicates
 def task_5():
     data = "Hello Nikko"
+    "".join(dict.fromkeys(data))
     print(set(data))
 
 
@@ -50,18 +52,14 @@ def task_6():
     l = list(s)
     freq = {}
     for el in l:
-        dict.update({el: freq.get(el, 0) + 1})
+        freq.update({el: freq.get(el, 0) + 1})
     return freq
 
 
 # change register to opposite
 def task_7():
     s = "Hello NiKko"
-    for element in s:
-        if element.isupper():
-            element.lower()
-        else:
-            element.upper()
+    s = "".join([ch.lower() if ch.isupper() else ch.upper() for ch in s])
     return s
 
 
@@ -69,18 +67,14 @@ def task_7():
 def task_8():
     s = "Hello world"
     words = s.split(" ")
-    for element in words:
-        element = element[::-1]
+    reversed_words = [w[::-1] for w in words]
+    print("".join(reversed_words))
 
 
 # delete all symbols instead letters
 def task_9():
     s = "Hello123 world"
-    for element in s:
-        if element.isalpha():
-            continue
-        else:
-            element = ""
+    print("".join([ch for ch in s if s.isalpha()]))
 
 
 # is_email
