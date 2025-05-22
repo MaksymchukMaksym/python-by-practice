@@ -1,0 +1,5 @@
+{
+  "file": "data.csv",
+  "column": "revenue",
+  "action": "sum"
+}
