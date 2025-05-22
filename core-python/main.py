@@ -5,7 +5,10 @@ MODULES = [
     "loops",
     "variables_and_types",
     "operators",
-    "if_else"
+    "if_else",
+    "strings",
+    "functions",
+    "modules"
 ]
 
 
@@ -18,7 +21,10 @@ def show_modules():
 
 def run_modules(module_name):
     try:
-        runpy.run_path(f"{module_name}.py", run_name="__main__")
+        if module_name == "modules":
+            runpy.run_path(f"{module_name}.py", run_name="modules")
+        else:
+            runpy.run_path(f"{module_name}.py", run_name="__main__")
     except Exception as e:
         print(f"Failed to run module '{module_name}': {e}")
 
