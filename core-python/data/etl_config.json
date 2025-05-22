@@ -1,5 +1,10 @@
 {
-  "file": "data.csv",
-  "column": "revenue",
-  "action": "sum"
+  "file": "data/input.csv",
+  "filter-column": "category",
+  "filter-value": "electronics",
+  "value-column": "price",
+  "action": [
+    "sum",
+    "max"
+  ]
 }

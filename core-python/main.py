@@ -8,7 +8,8 @@ MODULES = [
     "if_else",
     "strings",
     "functions",
-    "modules"
+    "modules",
+    "list_comprehensions"
 ]
 
 

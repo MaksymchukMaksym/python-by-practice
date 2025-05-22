@@ -16,4 +16,3 @@ def get_etl_config(file_name):
 
 if __name__ == "modules":
     etl_config = get_etl_config("data/etl_config.json")
-    print(etl_config)
