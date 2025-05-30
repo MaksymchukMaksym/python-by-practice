@@ -1,7 +1,7 @@
 import modules as md
 
 if __name__ == "__main__":
-    config = md.etl_config
+    config = md.get_etl_config("data/etl_config.json")
     try:
         with open(config["file"], 'r') as file:
             data = file.readlines()
