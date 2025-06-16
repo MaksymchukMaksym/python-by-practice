@@ -88,4 +88,4 @@ def process_sales_etl(config_file):
         logging.error(f"TypeError during writing output {e}")
 
 
-process_sales_etl("data/etl_config.json")
+process_sales_etl("../data/etl_config.json")

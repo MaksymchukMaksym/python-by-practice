@@ -1,7 +1,7 @@
 import json
 import logging
 
-logging.basicConfig(filename="data/fallback_errors.log", level=logging.ERROR,
+logging.basicConfig(filename="../data/fallback_errors.log", level=logging.ERROR,
                     format="%(asctime)s [%(levelname)s] %(message)s")
 
 

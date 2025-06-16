@@ -30,7 +30,7 @@ print("count_product:", dict(count_product))
 print("resume:", resume)
 print("unique_sales:", unique_sales)
 
-file_path = "data/output_collections.csv"
+file_path = "../data/output_collections.csv"
 with open(file_path, 'w', encoding='utf-8', newline='') as fileWrapper:
     writer = csv.DictWriter(fileWrapper, fieldnames=["item", "price", "quantity"])
     writer.writeheader()
